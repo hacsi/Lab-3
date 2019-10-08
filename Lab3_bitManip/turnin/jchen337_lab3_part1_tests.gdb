@@ -27,47 +27,33 @@ echo ======================================================\n
 echo Running all tests..."\n\n
 
 # Example test:
-test "PINA: 0x00 => PORTC: 0x40"
+test "PINA: 0x00, PINB: 0x00 => PORTC: 0x00"
 setPINA 0x00
+setPINB 0x00
 continue 2
-expectPORTC 0x40
+expectPORTC 0x00
 checkResult
 
 # Add tests below
-test "PINA: 0x01 => PORTC: 0x60"
-setPINA 0x01
+test "PINA: 0xFF, PINB: 0xFF => PORTC: 0x10"
+setPINA 0xFF
+setPINB 0xFF
 continue 2
-expectPORTC 0x60
+expectPORTC 0x10
 checkResult
 
-test "PINA: 0x03 => PORTC: 0x70"
-setPINA 0x03
-continue 2
-expectPORTC 0x70
-checkResult
-
-test "PINA: 0x05 => PORTC: 0x38"
-setPINA 0x05
-continue 2
-expectPORTC 0x38
-checkResult
-
-test "PINA: 0x07 => PORTC: 0x3C"
-setPINA 0x07
-continue 2
-expectPORTC 0x3C
-checkResult
-
-test "PINA: 0x0A => PORTC: 0x3E"
-setPINA 0x0A
-continue 2
-expectPORTC 0x3E
-checkResult
-
-test "PINA: 0x0F => PORTC: 0x3F"
+test "PINA: 0x0F, PINB: 0x00 => PORTC: 0x04"
 setPINA 0x0F
+setPINB 0x00
 continue 2
-expectPORTC 0x3F
+expectPORTC 0x04
+checkResult
+
+test "PINA: 0x00, PINB: 0x0F => PORTC: 0x04"
+setPINA 0x00
+setPINB 0x0F
+continue 2
+expectPORTC 0x04
 checkResult
 
 # Report on how many tests passed/tests ran
