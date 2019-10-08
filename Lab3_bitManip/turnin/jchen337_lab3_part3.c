@@ -1,7 +1,7 @@
 /*	Author: jchen337
  *  Partner(s) Name: Matthew Fernandes
  *	Lab Section:
- *	Assignment: Lab #3  Exercise #2
+ *	Assignment: Lab #3  Exercise #3
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
