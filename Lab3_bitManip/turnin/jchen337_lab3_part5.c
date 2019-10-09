@@ -32,6 +32,9 @@ int main(void) {
 	else if ((weight < 70) && (weight > 5)) {
 		PORTB = 0x04;
 	}
+	else {
+		PORTB = 0x00;
+	}
 	
     }
     return 1;
