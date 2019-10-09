@@ -31,6 +31,7 @@ int main(void) {
     while (1) {
 	tmpA = PINA;
 	tmpB = PINB;
+	cnt = 0x00;
 
 	for (i = 0; i < 8; ++i) {
 		if (GetBit(tmpA, i)) {
