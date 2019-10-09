@@ -1,6 +1,6 @@
 /*	Author: jchen337
  *  Partner(s) Name: Matthew Fernandes
- *	Lab Section:
+ *	Lab Section: 023
  *	Assignment: Lab #3  Exercise #4
  *	Exercise Description: [optional - include for your own benefit]
  *
